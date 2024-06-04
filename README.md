@@ -5,7 +5,7 @@ Welcome to my networking projects repository. I will be doing writeups on the va
 
 1. [Project 1: Running Wires](#project-1-running-wires)
 2. [Project 2: Network and Server Setup](#project-2-network-and-server-setup)
-3. [Project 3: Home SIEM](#project-3-home-siem)
+3. [Project 3: Home SIEM and Enhanced Security](#project-3-home-siem-and-enhanced-security)
 
 ## Project 1: Running Wires
 
@@ -48,11 +48,11 @@ Setting up fast and reliable connections throughout the house using Cat 6 UTP ca
 Setup all network devices, as well as setting up each server to do specific tasks on the network.
 
 ### Components Used
-- Gateway/Router: [UDM Pro by Ubiquiti]
-- Switch: USW Pro [24 POE by Ubiquiti]
-- APs: [1x U6 In-Wall,2x U6 Extenders all by Ubiquiti]
-- Server Units:[3x HP ProLiant DL360 Gen9 by HP]
-- Firewall:[Classified]
+- Gateway/Router: UDM Pro by Ubiquiti
+- Switch: USW Pro 24 POE by Ubiquiti
+- APs: 1x U6 In-Wall,2x U6 Extenders all by Ubiquiti
+- Server Units: 3x HP ProLiant DL360 Gen9 by HP
+- Firewall: Classified
 
 ### Setup and Configuration
 - **Firewall Configuration**: Used software to configure the firewall and make an in-depth ACL to block or allow traffic.
@@ -65,6 +65,6 @@ Setup all network devices, as well as setting up each server to do specific task
 - **Challenge**: Certain devices were not able to connect to the PiHole server and thus were unable to complete DNS requests.
   **Solution**: Edited ACLs to allow certain VLANs to send traffic to the server unit running PiHole.
 
-## Project 2: Home SIEM and Security
+## Project 3: Home SIEM and Enhanced Security
 
-#CURRENTLY IN PROGRESS
+CURRENTLY IN PROGRESS
