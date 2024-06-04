@@ -33,8 +33,8 @@ Setting up fast and reliable connections throughout the house using Cat 6 UTP ca
 ### Challenges and Solutions
 - **Challenge**: Running cables through difficult-to-access areas.
   **Solution**: Bought and used a right angel drill extension.
-  - **Challenge**: Getting a line from the demarc point outside to the centeralized location.
-  **Solution**: Purchased and used outdoor rated cable that was also shielded, along with drilling a hole in the attic wall to gain access to the outside before filling it up with weather resistant silicone caulk.
+- **Challenge**: Getting a line from the demarc point outside to the centeralized location.
+   **Solution**: Purchased and used outdoor rated cable that was also shielded, along with drilling a hole in the attic wall to gain access to the outside before filling it up with weather resistant silicone caulk.
 
 ### Results
 - Achieved a stable and high-speed Ethernet network throughout the house.
@@ -45,25 +45,30 @@ Setting up fast and reliable connections throughout the house using Cat 6 UTP ca
 ## Project 2: Network and Server Setup
 
 ### Objective
-Setup all network devices, as well as setting up each server to do specific tasks on the network.
+Setup all network devices and configure each server to perform specific tasks on the network, ensuring a secure, efficient, and isolated environment for different network needs.
 
 ### Components Used
 - Gateway/Router: UDM Pro by Ubiquiti
 - Switch: USW Pro 24 POE by Ubiquiti
-- APs: 1x U6 In-Wall,2x U6 Extenders all by Ubiquiti
+- Access Points (APs): 1x U6 In-Wall, 2x U6 Extenders all by Ubiquiti
 - Server Units: 3x HP ProLiant DL360 Gen9 by HP
 - Firewall: Classified
 
 ### Setup and Configuration
 - **Firewall Configuration**: Used software to configure the firewall and make an in-depth ACL to block or allow traffic.
 - **AP Tweaking**: Used Ubiquitis built in software to configure the APs to ensure proper transmitting power to avoid overlapping signals.
-- **Server Setup**: Gave static IPs to each in use server unit and installed software on them. (ProxMox and PiHole respectively)
+- **Server Setup**:  Assigned static IPs to each server unit and installed necessary software (ProxMox and PiHole).
 
 ### Challenges and Solutions
-- **Challenge**: Struggled to isolate IoT devices from the rest of the network.
-  **Solution**: Created and configured different VLANs to segment out the network to ensure isolation.
-- **Challenge**: Certain devices were not able to connect to the PiHole server and thus were unable to complete DNS requests.
-  **Solution**: Edited ACLs to allow certain VLANs to send traffic to the server unit running PiHole.
+- **Challenge**: Isolating IoT devices from the rest of the network.
+  **Solution**: Implemented VLANs to segment the network.
+- **Challenge**: Devices unable to connect to the PiHole server for DNS requests.
+  **Solution**: Modified ACLs to permit specific VLANs to communicate with the PiHole server.
+
+### Results
+- Established reliable wired and wireless network connectivity.
+- Enabled and configured a network-wide adblocker at the DNS level.
+- Created a robust environment for running and testing new VMs and software.
 
 ## Project 3: Home SIEM and Enhanced Security
 
